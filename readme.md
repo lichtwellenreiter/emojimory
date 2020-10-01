@@ -1,3 +1,3 @@
-:spades::hearts::clubs: :diamonds:  
+:spades: :hearts: :clubs: :diamonds:  
 
-:space_invader: Emojimory - Memory Game with Emojis
+# :space_invader: Emojimory - Memory Game with Emojis
