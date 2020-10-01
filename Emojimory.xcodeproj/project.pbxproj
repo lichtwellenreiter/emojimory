@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		178FDDBD25260D23007B353E /* EmojimoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDBC25260D23007B353E /* EmojimoryApp.swift */; };
-		178FDDBF25260D23007B353E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDBE25260D23007B353E /* ContentView.swift */; };
 		178FDDC125260D25007B353E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDC025260D25007B353E /* Assets.xcassets */; };
 		178FDDC425260D25007B353E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDC325260D25007B353E /* Preview Assets.xcassets */; };
+		178FDDCE25260E0A007B353E /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDCD25260E0A007B353E /* readme.md */; };
+		178FDDD125260F5F007B353E /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDD025260F5F007B353E /* MemoryGameView.swift */; };
+		178FDDD425260F6F007B353E /* MemoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDD325260F6F007B353E /* MemoryGameModel.swift */; };
+		178FDDD725260F80007B353E /* MemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDD625260F80007B353E /* MemoryGameViewModel.swift */; };
+		178FDDDC2526104E007B353E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDDB2526104E007B353E /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		178FDDB925260D23007B353E /* Emojimory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojimory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178FDDBC25260D23007B353E /* EmojimoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojimoryApp.swift; sourceTree = "<group>"; };
-		178FDDBE25260D23007B353E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		178FDDC025260D25007B353E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		178FDDC325260D25007B353E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		178FDDC525260D25007B353E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178FDDCD25260E0A007B353E /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
+		178FDDD025260F5F007B353E /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
+		178FDDD325260F6F007B353E /* MemoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameModel.swift; sourceTree = "<group>"; };
+		178FDDD625260F80007B353E /* MemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewModel.swift; sourceTree = "<group>"; };
+		178FDDDB2526104E007B353E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			children = (
 				178FDDBB25260D23007B353E /* Emojimory */,
 				178FDDBA25260D23007B353E /* Products */,
+				178FDDCC25260DD9007B353E /* git-files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,9 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				178FDDBC25260D23007B353E /* EmojimoryApp.swift */,
-				178FDDBE25260D23007B353E /* ContentView.swift */,
-				178FDDC025260D25007B353E /* Assets.xcassets */,
+				178FDDD025260F5F007B353E /* MemoryGameView.swift */,
+				178FDDD325260F6F007B353E /* MemoryGameModel.swift */,
+				178FDDD625260F80007B353E /* MemoryGameViewModel.swift */,
+				178FDDDB2526104E007B353E /* SettingsView.swift */,
 				178FDDC525260D25007B353E /* Info.plist */,
+				178FDDC025260D25007B353E /* Assets.xcassets */,
 				178FDDC225260D25007B353E /* Preview Content */,
 			);
 			path = Emojimory;
@@ -67,6 +79,14 @@
 				178FDDC325260D25007B353E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		178FDDCC25260DD9007B353E /* git-files */ = {
+			isa = PBXGroup;
+			children = (
+				178FDDCD25260E0A007B353E /* readme.md */,
+			);
+			path = "git-files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				178FDDC425260D25007B353E /* Preview Assets.xcassets in Resources */,
+				178FDDCE25260E0A007B353E /* readme.md in Resources */,
 				178FDDC125260D25007B353E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				178FDDBF25260D23007B353E /* ContentView.swift in Sources */,
+				178FDDDC2526104E007B353E /* SettingsView.swift in Sources */,
+				178FDDD425260F6F007B353E /* MemoryGameModel.swift in Sources */,
+				178FDDD725260F80007B353E /* MemoryGameViewModel.swift in Sources */,
+				178FDDD125260F5F007B353E /* MemoryGameView.swift in Sources */,
 				178FDDBD25260D23007B353E /* EmojimoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

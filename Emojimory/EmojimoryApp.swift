@@ -2,7 +2,7 @@
 //  EmojimoryApp.swift
 //  Emojimory
 //
-//  Created by Florian Thiévent on 01.10.20.
+//  Created by Florian Thiévent on 17.09.20.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct EmojimoryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmojiMemoryGameView(viewModel: EmojiMemoryGameViewModel())
         }
     }
 }
