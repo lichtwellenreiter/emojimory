@@ -11,8 +11,8 @@ struct SettingsView: View {
     var body: some View {
         VStack{
             Spacer()
-            Text("Emojimory").font(.largeTitle)
-            Text("🤷🏼‍♂️").font(.system(size:60))
+            Text("🤷🏻‍♂️").font(.system(size:150))
+            Text("Emojimory").font(.custom("Couture-Bold", size: 50))
             VStack{
                 Text("Emoji Memory Game developed for iOS Course @ FHNW")
                     .multilineTextAlignment(.center)

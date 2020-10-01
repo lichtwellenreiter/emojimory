@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct EmojiMemoryGameView: View {
+struct MemoryGameView: View {
     
     @State var showingDetail = false
-    
-    @ObservedObject var viewModel: EmojiMemoryGameViewModel
+    @State var showingSettings = false
+    @ObservedObject var viewModel: MemoryGameViewModel
     
     var body: some View {
-
+        VStack{
             HStack{
                 ForEach(viewModel.cards){card in
                     CardView(card: card).onTapGesture {
@@ -22,8 +22,20 @@ struct EmojiMemoryGameView: View {
                     }
                 }
             }.padding()
-        
+            Spacer()
+            HStack{
+                
+                Button(action: {
+                    self.showingSettings.toggle()
+                }, label: {
+                    Image("settings")
+                }).sheet(isPresented: $showingSettings){
+                    SettingsView()
+                }
+            }.padding().frame(height:100, alignment: .trailing)
         }
+        
+    }
         
     }
 
@@ -48,7 +60,9 @@ struct CardView:View{
                 Text(card.content).font(.system(size: fontSize(size)))
             } else {
                 RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill(Color.blue)
+                    .stroke(lineWidth: lineWidth)
+                    .foregroundColor(.blue)
+                Text("🤷🏻‍♂️").font(.system(size: fontSize(size)))
             }
         }.aspectRatio(aspectRatio, contentMode: .fit)
     }
@@ -65,6 +79,6 @@ struct CardView:View{
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiMemoryGameView(viewModel: EmojiMemoryGameViewModel())
+        MemoryGameView(viewModel: MemoryGameViewModel())
     }
 }

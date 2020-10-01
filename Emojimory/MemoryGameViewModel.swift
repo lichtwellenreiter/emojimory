@@ -7,10 +7,10 @@
 
 import Foundation
 
-class EmojiMemoryGameViewModel: ObservableObject{
+class MemoryGameViewModel: ObservableObject{
     
     init() {
-        model = EmojiMemoryGameViewModel.createMemoryGame()
+        model = MemoryGameViewModel.createMemoryGame()
     }
     
     @Published private var model: MemoryGameModel<String>

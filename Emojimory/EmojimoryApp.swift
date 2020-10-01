@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct EmojimoryApp: App {
+    @State var gameStarted: Bool = false
     var body: some Scene {
         WindowGroup {
-            EmojiMemoryGameView(viewModel: EmojiMemoryGameViewModel())
+            if gameStarted{
+                MemoryGameView(viewModel: MemoryGameViewModel())
+            }
+            MemoryGameStartView(gameStarted: $gameStarted)
         }
     }
 }

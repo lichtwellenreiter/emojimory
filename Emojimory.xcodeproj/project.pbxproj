@@ -15,6 +15,13 @@
 		178FDDD425260F6F007B353E /* MemoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDD325260F6F007B353E /* MemoryGameModel.swift */; };
 		178FDDD725260F80007B353E /* MemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDD625260F80007B353E /* MemoryGameViewModel.swift */; };
 		178FDDDC2526104E007B353E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDDDB2526104E007B353E /* SettingsView.swift */; };
+		178FDDE0252610D7007B353E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDDF252610D7007B353E /* .gitignore */; };
+		178FDDE425261396007B353E /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDE325261396007B353E /* settings.png */; };
+		178FDDE7252613C0007B353E /* settings2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDE6252613C0007B353E /* settings2x.png */; };
+		178FDDF0252618FF007B353E /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDEE252618FF007B353E /* appicon.png */; };
+		178FDE0125261C34007B353E /* Couture-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 178FDDFF25261C34007B353E /* Couture-Bold.otf */; };
+		178FDE0225261C34007B353E /* Couture-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 178FDE0025261C34007B353E /* Couture-BoldItalic.otf */; };
+		178FDE0A2526234A007B353E /* MemoryGameStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FDE092526234A007B353E /* MemoryGameStartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,15 @@
 		178FDDD325260F6F007B353E /* MemoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameModel.swift; sourceTree = "<group>"; };
 		178FDDD625260F80007B353E /* MemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewModel.swift; sourceTree = "<group>"; };
 		178FDDDB2526104E007B353E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		178FDDDF252610D7007B353E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		178FDDE325261396007B353E /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		178FDDE6252613C0007B353E /* settings2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings2x.png; sourceTree = "<group>"; };
+		178FDDEE252618FF007B353E /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		178FDDFF25261C34007B353E /* Couture-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Couture-Bold.otf"; sourceTree = "<group>"; };
+		178FDE0025261C34007B353E /* Couture-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Couture-BoldItalic.otf"; sourceTree = "<group>"; };
+		178FDE092526234A007B353E /* MemoryGameStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameStartView.swift; sourceTree = "<group>"; };
+		178FDE0C252624AF007B353E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		178FDE0D252624B0007B353E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +77,10 @@
 		178FDDBB25260D23007B353E /* Emojimory */ = {
 			isa = PBXGroup;
 			children = (
+				178FDDE225261374007B353E /* assets */,
 				178FDDBC25260D23007B353E /* EmojimoryApp.swift */,
 				178FDDD025260F5F007B353E /* MemoryGameView.swift */,
+				178FDE092526234A007B353E /* MemoryGameStartView.swift */,
 				178FDDD325260F6F007B353E /* MemoryGameModel.swift */,
 				178FDDD625260F80007B353E /* MemoryGameViewModel.swift */,
 				178FDDDB2526104E007B353E /* SettingsView.swift */,
@@ -84,9 +102,40 @@
 		178FDDCC25260DD9007B353E /* git-files */ = {
 			isa = PBXGroup;
 			children = (
+				178FDDDF252610D7007B353E /* .gitignore */,
 				178FDDCD25260E0A007B353E /* readme.md */,
 			);
 			path = "git-files";
+			sourceTree = "<group>";
+		};
+		178FDDE225261374007B353E /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				178FDDFE25261C04007B353E /* font */,
+				178FDDED252618E7007B353E /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		178FDDED252618E7007B353E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				178FDDEE252618FF007B353E /* appicon.png */,
+				178FDDE6252613C0007B353E /* settings2x.png */,
+				178FDDE325261396007B353E /* settings.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		178FDDFE25261C04007B353E /* font */ = {
+			isa = PBXGroup;
+			children = (
+				178FDE0C252624AF007B353E /* OpenSans-Light.ttf */,
+				178FDE0D252624B0007B353E /* OpenSans-Regular.ttf */,
+				178FDDFF25261C34007B353E /* Couture-Bold.otf */,
+				178FDE0025261C34007B353E /* Couture-BoldItalic.otf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +195,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178FDE0225261C34007B353E /* Couture-BoldItalic.otf in Resources */,
+				178FDDE7252613C0007B353E /* settings2x.png in Resources */,
+				178FDDE0252610D7007B353E /* .gitignore in Resources */,
 				178FDDC425260D25007B353E /* Preview Assets.xcassets in Resources */,
 				178FDDCE25260E0A007B353E /* readme.md in Resources */,
 				178FDDC125260D25007B353E /* Assets.xcassets in Resources */,
+				178FDDE425261396007B353E /* settings.png in Resources */,
+				178FDDF0252618FF007B353E /* appicon.png in Resources */,
+				178FDE0125261C34007B353E /* Couture-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +216,7 @@
 			files = (
 				178FDDDC2526104E007B353E /* SettingsView.swift in Sources */,
 				178FDDD425260F6F007B353E /* MemoryGameModel.swift in Sources */,
+				178FDE0A2526234A007B353E /* MemoryGameStartView.swift in Sources */,
 				178FDDD725260F80007B353E /* MemoryGameViewModel.swift in Sources */,
 				178FDDD125260F5F007B353E /* MemoryGameView.swift in Sources */,
 				178FDDBD25260D23007B353E /* EmojimoryApp.swift in Sources */,
